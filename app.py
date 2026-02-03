@@ -11,7 +11,7 @@ def index():
         "pod": os.getenv("HOSTNAME", "unknown")
     }
 
-@app.route("/health")
+@app.route("/api")
 def health():
     return {"status": "ok"}
 
