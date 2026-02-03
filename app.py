@@ -12,7 +12,7 @@ def index():
     }
 
 @app.route("/api")
-def api():
+def apiy():
     return {"status": "ok"}
 
 if __name__ == "__main__":
