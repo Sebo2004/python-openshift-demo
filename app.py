@@ -12,7 +12,7 @@ def index():
     }
 
 @app.route("/api")
-def health():
+def api():
     return {"status": "ok"}
 
 if __name__ == "__main__":
