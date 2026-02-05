@@ -5,12 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return {
-        "app": "python-openshift-demo",
-        "status": "running",
-        "pod": os.getenv("HOSTNAME", "unknown")
-    }
-
+    return "<h1>Hola desde OpenShift</h1>"
+    
 @app.route("/api")
 def api():
     return {"status": "ok"}
